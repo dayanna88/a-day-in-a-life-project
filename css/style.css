@@ -1,0 +1,318 @@
+body,html {
+  width:100%;
+  height:100%;
+}
+
+body {
+  font-family:'Luckiest Guy', cursive;
+}
+
+
+
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+    height:100vh;
+}
+
+.AM {
+
+    position: absolute;
+    top: 50%;
+    left: 36%;
+    transform: translate(-50%, -50%);
+  color:#FF33DA;
+  font-size: 100px;
+  font-family: 'Luckiest Guy', cursive;
+  transition:300ms;
+}
+
+.AM:before{
+  content:"";
+  width:20vw;
+  height:20vw;
+  border: yellow dashed 7px;
+  display: block;
+  border-radius: 100%;
+  position: absolute;
+  top: -70px;
+  left: -70px;
+  animation-name: spin;
+  animation-duration: 10s;
+  animation-iteration-count:infinite;
+  opacity: 0;
+  transition:300ms;
+
+
+}
+.AM:hover:before{
+
+ opacity:1;
+}
+
+.AM:after{
+  content:"";
+  width:18vw;
+  height:18vw;
+  border: yellow dashed 7px;
+  display: block;
+  border-radius: 100%;
+  position: absolute;
+  top: -60px;
+  left: -60px;
+  animation-name: spin;
+  animation-duration: 5s;
+  animation-iteration-count:infinite;
+  opacity: 0;
+  transition:300ms;
+
+}
+.AM:hover:after{
+
+ opacity:1;
+}
+
+
+.PM {
+
+    position: absolute;
+    top: 50%;
+    left: 36%;
+    transform: translate(-50%, -50%);
+  color:#FF33DA;
+  font-size: 100px;
+  font-family: font-size: 100px;
+  font-family:'Luckiest Guy', cursive;
+  transition:300ms;
+}
+
+.PM:before{
+  content:"";
+  width:20vw;
+  height:20vw;
+  border: #6133FF dashed 7px;
+  display: block;
+  border-radius: 100%;
+  position: absolute;
+  top: -70px;
+  left: -70px;
+  animation-name: spin;
+  animation-duration: 10s;
+  animation-iteration-count:infinite;
+  opacity:0;
+  transition:300ms;
+
+}
+
+.PM:after{
+  content:"";
+  width:18vw;
+  height:18vw;
+  border: #6133FF dashed 7px;
+  display: block;
+  border-radius: 100%;
+  position: absolute;
+  top: -60px;
+  left: -60px;
+  animation-name: spin;
+  animation-duration: 5s;
+  animation-iteration-count:infinite;
+  opacity:0;
+  transition:300ms;
+
+}
+
+.PM:hover:after{
+opacity:1;
+}
+
+
+.PM:hover:before{
+opacity:1;
+}
+
+
+
+@keyframes spin {
+  from {transform:rotate(0deg);
+
+  }
+  to{transform:rotate(360deg);
+
+  }
+
+
+}
+
+
+.PM {
+   position: absolute;
+    top: 50%;
+    left: 73%;
+    transform: translate(-50%, -50%);
+    font-size: 100px;
+  font-family:'Luckiest Guy', cursive;
+}
+
+.home-page {
+  background-image: url("https://res.cloudinary.com/dyybitzae/image/upload/v1541110291/giraffe.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.morning-page {
+  background:yellow;
+}
+
+.morning-page a {
+  background:magenta;
+  display: block;
+  border-radius: 100%;
+}
+
+.morning-page a img {
+ opacity: 0;
+ transition: 300ms;
+}
+
+.morning-page a:hover img {
+ opacity: 1;
+}
+
+
+
+.night-page {
+  background:#CC66FF;
+}
+
+.night-page a {
+  background:purple;
+  display: block;
+  border-radius: 100%;
+}
+
+.night-page a img {
+ opacity: 0;
+ transition: 300ms;
+}
+.night-page a:hover img {
+ opacity: 1;
+}
+
+.hour-page-am {
+
+background-image: url("../img/morning-background.png");
+background-size: cover;
+background-repeat: no-repeat;
+font-family: 'Quattrocento Sans', sans-serif;
+
+
+
+}
+
+.hour-page-am h1 {
+  color:white;
+font-size: 100px;
+  text-align: right;
+  position: absolute;
+  padding-bottom: 30%;
+
+}
+
+.hour-page-am p {
+  color:purple;
+  font-size: 18px;
+text-align: right;
+padding-right: 25px;
+}
+
+.hour-page-am img {
+  padding-top: 18px;
+}
+
+.hour-page-pm {
+
+background-image: url("../img/night-background.png");
+background-size: cover;
+background-repeat: no-repeat;
+font-family: 'Quattrocento Sans', sans-serif;
+
+
+
+
+}
+
+.hour-page-pm h1 {
+  color:white;
+font-size: 100px;
+  text-align: right;
+  position: absolute;
+  padding-bottom: 20%;
+
+}
+
+.hour-page-pm p {
+  color:white;
+  font-size: 18px;
+text-align: right;
+padding-right: 30px;
+
+}
+
+.hour-page-pm img {
+  padding-top: 24px;
+  padding-left: 12px;
+}
+
+
+  .am-img-1 {
+    position:absolute;
+    top:30%;
+    left:10%;
+  }
+
+  .am-img-2 {
+    position:absolute;
+    top:8%;
+    left:44%;
+
+  }
+
+  .am-img-3 {
+    position:absolute;
+    top:60%;
+    left:20%;
+  }
+
+  .am-img-4 {
+    position:absolute;
+    top:60%;
+    left:70%;
+  }
+
+
+.pm-img-2 {
+  position:absolute;
+  top:30%;
+  left:10%;
+}
+
+.pm-img-3 {
+  position:absolute;
+  top:8%;
+  left:44%;
+
+}
+
+.pm-img-1 {
+  position:absolute;
+  top:60%;
+  left:20%;
+}
+
+.pm-img-4 {
+  position:absolute;
+  top:60%;
+  left:50%;
+}
